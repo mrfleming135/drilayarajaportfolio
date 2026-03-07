@@ -112,7 +112,7 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 820px){
   .nav{
     flex-wrap: wrap;
   }
@@ -130,6 +130,7 @@
     align-items: stretch;
     gap: 8px;
     padding-top: 10px;
+    order: 3;
   }
 
   .navlinks.open{
@@ -499,6 +500,18 @@ button, .btn, .pill, .chip{
 button:hover, .btn:hover, .pill:hover, .chip:hover{
   transform: translateY(-4px);
 }
+/* Mobile hero improvement */
+@media (max-width: 640px){
+  .heroTop{
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .profilePhoto{
+    width:120px;
+    height:120px;
+  }
+}
   </style>
 </head>
 
@@ -561,7 +574,7 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
       <div class="stats" id="stats">
         
         <div class="stat">
-          <div class="num" data-count="19">0</div>
+          <div class="num" data-count="18">0</div>
           <div class="lbl">Years of Expertise</div>
         </div>
         <div class="stat">
@@ -682,9 +695,9 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
             <p class="trole">Block Medical Officer</p>
             <p class="torg"><strong>Primary Healthcare Center</strong>, <em>Uchipuli, Tamil Nadu</em></p>
             <ul class="clean">
-              <li>Managed hospital administration and medical staff supervision.</li>
-              <li>Implemented public health and maternal healthcare programs.</li>
-              <li>Improved healthcare infrastructure and service delivery.</li>
+              <li>Conducted special health awareness programs for antenatal mothers to improve maternal and infant health outcomes, helping reduce mortality and morbidity below national targets.</li>
+              <li>Successfully implemented key government healthcare schemes including <strong>School Health Program, Mobile Health Services, CMCHIS, and Maternal & Child Care initiatives</strong></li>
+              <li>Ensured effective block-level administration, enabling timely program implementation and early grievance redressal.</li>
             </ul>
           </div>
         </div>
@@ -734,9 +747,10 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
             <p class="trole">School Director</p>
             <p class="torg"><strong>Raja Institution</strong>, <em>Mandapam, Tamil Nadu</em></p>
             <ul class="clean">
-              <li>Managed academic and administrative operations of the institution.</li>
-              <li>Supervised faculty performance and curriculum delivery.</li>
-              <li>Implemented initiatives to improve student learning outcomes.</li>
+              <li>Identified learning challenges among rural students and implemented targeted academic support programs to improve learning outcomes.</li>
+              <li>Developed the <strong>CARE (Intensive Educational Care Unit)</strong> curriculum to support slow learners and bring students to a common academic standard..</li>
+              <li>Conducted continuous faculty development programs and organised expert-led seminars to enhance teaching quality and support high-performing students.</li>
+              <li>Led the institution to achieve <strong>District and State-Level Academic Ranks</strong>, strengthening overall academic excellence.</li>
             </ul>
           </div>
         </div>
@@ -753,7 +767,7 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
       <div class="cols">
         <div class="ibox">
           <h3>Healthcare Institutions</h3>
-           <h3>Rajeswari Group of Hospitals</h3> 
+             <p class="muted" style="margin:0 0 8px 0;"><strong>Rajeswari Group of Hospitals</strong></p>
            <ul class="clean">
             <li><b>Rajeswari Clinic</b> – <em>Thangachimadam</em></li>
             <li><b>Rajeswari Clinic</b> – <em>Mandapam</em></li>
@@ -763,7 +777,7 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
         </div>
 
         <div class="ibox">
-          <div style="height:10px;"></div>
+          <div style="margin-top:10px;"></div>
           <h3>Diagnostic Services</h3>
            <ul class="clean">
             <li><b>Karthigai Samy Scans</b> – <em>Mandapam</em></li>
@@ -773,7 +787,7 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
             <li><b>Dr. Ilayaraja Global Academy</b> – <em>Pirapanvalasai</em></li>
             <li><b>Dr. Ilayaraja Nursery & Primary School</b> – <em>Mandapam</em></li>
           </ul>
-          <div style="height:10px;"></div>
+          <div style="margin-top:10px;"></div>
           <h3>Education & Health Services Trust</h3>
           <ul class="clean">
             <li><b>Dr. Ilayaraja Education & Health Services Trust</b> <em>– Mandapam</em></li>
@@ -817,11 +831,11 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
             <li>Increased <b>Institutional Deliveries</b> at Uchipuli PHC.</li>
             <li>Introduced the <b>First Uterus Removal Surgery</b> in a primary health centre in Tamil Nadu.</li>
             <li>Established <b>Amma Ward</b> for maternal healthcare.</li>
-            <li>Developed separate facilities for <b>Mother-Child Care</b> and <b>Infectious Diseases</b> .</li>
+            <li>Developed separate facilities for <b>Mother-Child Care</b> and <b>Infectious Diseases</b>.</li>
             <li>Upgraded <b>Drug Record Management System</b>, ensured 24/7 electricity and water supply at Uchipuli PHC.</li>
-            <li>Achieved <b>ISI</b> quality certification and organized daily scans for<b> 30+ Pregnant Women</b>.</li>
-            <li>Implemented field programs to<b> Control Dengue</b> and<b> Malaria Outbreaks</b>.</li>
-            <li>Established a dedicated<b> Clinic</b> for<b> Pregnant Women</b> to ensure they receive safe healthcare services <b>Without Exposure</b> to <b>Other Infections</b>, especially during the <b>COVID-19 Period</b>.</li>
+            <li>Achieved <b>ISI</b> quality certification and organized daily scans for <b>30+ Pregnant Women</b>.</li>
+            <li>Implemented field programs to <b>Control Dengue</b> and <b>Malaria Outbreaks</b>.</li>
+            <li>Established a dedicated <b>Clinic</b> for <b>Pregnant Women</b> to ensure they receive safe healthcare services <b>Without Exposure</b> to <b>Other Infections</b>, especially during the <b>COVID-19 Period</b>.</li>
           </ul>
         </div>
 
@@ -829,10 +843,10 @@ button:hover, .btn:hover, .pill:hover, .chip:hover{
           <h3>Public & Environmental Engagement</h3>
           <ul class="clean">
             <li>On behalf of the <b>Ramanathapuram District Forest Department</b>, a special summer camp on
-                <b>Climate Change</b>  was organized for government school students in Ramanathapuram.</li>
-            <li>Conducted <b>International Yoga Day</b> awareness program for school students,<b> Prof. Dr. A. Rajendran</b> (Chartered Chemist, Scientist, Herbal Clinician) participated as the chief guest and delivered an awareness talk on the importance of yoga and how to practice it in daily life.</li>
+                <b>Climate Change</b> was organized for government school students in Ramanathapuram.</li>
+            <li>Conducted <b>International Yoga Day</b> awareness program for school students, with <b>Prof. Dr. A. Rajendran</b> (Chartered Chemist, Scientist, Herbal Clinician) as the chief guest, who delivered an awareness talk on the importance of yoga and how to practice it in daily life.</li>
             <li>Participated as guest of honour in <b>International Sand Dune Day</b>, a special program was conducted by <b>Arulagam Trust</b>, Rameswaram.</li>
-            <li>Actively participated in a mangrove plantation drive on <b>International Mangrove Day</b> was carried out at Kunthukal in Rameswaram island with the guidance of the <b>Forest Department</b>, program was inaugurated by <b>District Forest Officer Mr. Jagadeesh Bagan</b>, and a total of <b>600 Mangrove Saplings</b> were planted.</li>
+            <li>Actively participated in a mangrove plantation drive on <b>International Mangrove Day</b>, carried out at Kunthukal in Rameswaram Island under the guidance of the <b>Forest Department</b>. The program was inaugurated by <b>District Forest Officer Mr. Jagadeesh Bagan</b>, and a total of <b>600 mangrove saplings</b> were planted.</li>
           </ul>
         </div>
       </div>
